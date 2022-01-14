@@ -57,7 +57,7 @@ def predict(model_type, finetune_dataset, input_path, output_path,
             img_output_path = output_path_list[i]
             original_size = original_size_list[i].numpy()
             print(img_output_path)
-            if not probability_output:
+            if probability_output == False:
                 img_data = post_process_png(prediction, original_size)
                 cv2.imwrite(img_output_path, img_data)
             else:
