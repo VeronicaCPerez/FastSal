@@ -17,6 +17,31 @@ Find our pre-print on arXiv: [FastSal: a Computationally Efficient Network for V
 }
 ````
 
+## Simple use instructions for Hassan:
+
+### install requirements
+
+* Doesn't work in M1 macbooks because of compatibility issues with the packages. And because is not possible to install python 3.7.5
+* Use python 3.7.5
+
+```
+  pip install -r requirements.txt
+```
+
+* Run the model: without GPU takes too long to process 
+
+```bash
+python fastSal_predict.py \
+-model_type A \
+-finetune_dataset coco \
+-input_path image_examples/ \
+-output_path image_examples/ \
+-batch_size 30 \
+-probability_output False \
+-gpu False
+```
+
+
 ## Install Dependencies
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install python library dependencies.
