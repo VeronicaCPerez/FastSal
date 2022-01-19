@@ -41,6 +41,29 @@ python fastSal_predict.py \
 -gpu False
 ```
 
+## Simple instructions MAC M1
+
+1. Install python 3@7 using rosetta 2: Follow this [tutorial](https://diewland.medium.com/how-to-install-python-3-7-on-macbook-m1-87c5b0fcb3b5)
+2. Install requirements
+
+```
+  pip install -r requirements_M1.txt
+```
+
+3. Can't do the training because there is no package for onnxruntime
+4. Run the pre-trained model:
+
+```bash
+python fastSal_predict.py \
+-model_type A \
+-finetune_dataset coco \
+-input_path image_examples/ \
+-output_path image_examples/ \
+-batch_size 30 \
+-probability_output False \
+-gpu False
+```
+
 
 ## Install Dependencies
 
