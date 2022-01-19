@@ -21,7 +21,7 @@ Find our pre-print on arXiv: [FastSal: a Computationally Efficient Network for V
 
 ### install requirements
 
-
+* Doesn't work in M1 macbooks because of compatibility issues with the packages. And because is not possible to install python 3.7.5
 * Use python 3.7.5
 
 ```
